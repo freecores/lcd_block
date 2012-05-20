@@ -21,8 +21,120 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="iseProject.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="lcd_controller.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="lcd_controller.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="lcd_controller.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="lcd_controller.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lcd_controller.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="lcd_controller.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="lcd_controller.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="lcd_controller.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lcd_controller_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lcd_controller_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lcd_controller_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testLcd_controller_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testLcd_controller_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="testLcd_controller_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1337475576" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1337475576">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337475576" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1337475576">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="lcd_controller.v"/>
+      <outfile xil_pn:name="lcd_wishbone_slave.v"/>
+      <outfile xil_pn:name="testLcd_controller.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1337475576" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2836371237087295533" xil_pn:start_ts="1337475576">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337475576" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2387588251019774503" xil_pn:start_ts="1337475576">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337475576" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1645243788895470835" xil_pn:start_ts="1337475576">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337475576" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1337475576">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="lcd_controller.v"/>
+      <outfile xil_pn:name="lcd_wishbone_slave.v"/>
+      <outfile xil_pn:name="testLcd_controller.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1337475581" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1659802317889134806" xil_pn:start_ts="1337475576">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="testLcd_controller_beh.prj"/>
+      <outfile xil_pn:name="testLcd_controller_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1337475581" xil_pn:in_ck="2483329315479921445" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5883582692330391981" xil_pn:start_ts="1337475581">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="testLcd_controller_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1337471657" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1337471656">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337471657" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3740353416236518503" xil_pn:start_ts="1337471657">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337471657" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-1645243788895470835" xil_pn:start_ts="1337471657">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337471657" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1337471657">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337471657" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4015078847939689069" xil_pn:start_ts="1337471657">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337471657" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2095263170166042431" xil_pn:start_ts="1337471657">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337471657" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-7588905337421941801" xil_pn:start_ts="1337471657">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337475492" xil_pn:in_ck="-3373480295076389399" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="5624389301805847959" xil_pn:start_ts="1337475474">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="lcd_controller.lso"/>
+      <outfile xil_pn:name="lcd_controller.ngc"/>
+      <outfile xil_pn:name="lcd_controller.ngr"/>
+      <outfile xil_pn:name="lcd_controller.prj"/>
+      <outfile xil_pn:name="lcd_controller.stx"/>
+      <outfile xil_pn:name="lcd_controller.syr"/>
+      <outfile xil_pn:name="lcd_controller.xst"/>
+      <outfile xil_pn:name="lcd_controller_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
 
 </generated_project>
