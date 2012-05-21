@@ -11,11 +11,5 @@
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/lcd_block/hdl/iseProject/lcd_controller.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/lcd_block/hdl/iseProject/lcd_wishbone_slave.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/lcd_block/hdl/iseProject/testLcd_controller.v&quot; into library work</arg>
-</msg>
-
 </messages>
 

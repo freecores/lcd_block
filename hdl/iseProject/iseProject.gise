@@ -46,37 +46,37 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1337475576" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1337475576">
+    <transform xil_pn:end_ts="1337522725" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1337522725">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1337475576" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1337475576">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="lcd_controller.v"/>
-      <outfile xil_pn:name="lcd_wishbone_slave.v"/>
-      <outfile xil_pn:name="testLcd_controller.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1337475576" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2836371237087295533" xil_pn:start_ts="1337475576">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1337475576" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2387588251019774503" xil_pn:start_ts="1337475576">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1337475576" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1645243788895470835" xil_pn:start_ts="1337475576">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1337475576" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1337475576">
+    <transform xil_pn:end_ts="1337576939" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1337576939">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="lcd_controller.v"/>
       <outfile xil_pn:name="lcd_wishbone_slave.v"/>
       <outfile xil_pn:name="testLcd_controller.v"/>
     </transform>
-    <transform xil_pn:end_ts="1337475581" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1659802317889134806" xil_pn:start_ts="1337475576">
+    <transform xil_pn:end_ts="1337522725" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2836371237087295533" xil_pn:start_ts="1337522725">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337522725" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2387588251019774503" xil_pn:start_ts="1337522725">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337522725" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1645243788895470835" xil_pn:start_ts="1337522725">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337576939" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1337576939">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="lcd_controller.v"/>
+      <outfile xil_pn:name="lcd_wishbone_slave.v"/>
+      <outfile xil_pn:name="testLcd_controller.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1337576940" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1659802317889134806" xil_pn:start_ts="1337576939">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -85,7 +85,7 @@
       <outfile xil_pn:name="testLcd_controller_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1337475581" xil_pn:in_ck="2483329315479921445" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5883582692330391981" xil_pn:start_ts="1337475581">
+    <transform xil_pn:end_ts="1337576941" xil_pn:in_ck="2483329315479921445" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2007445876491768972" xil_pn:start_ts="1337576940">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -123,6 +123,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="lcd_controller.lso"/>
       <outfile xil_pn:name="lcd_controller.ngc"/>

@@ -32,16 +32,25 @@ module testLcd_controller;
 		.done(done)
 	);
 
-	initial begin
+	// Create clock
+	always
+	begin
+		#10 clk = ~clk;	// Toogle the clock each 10ns (20ns period is 50Mhz)
+	end
+	
+	initial 
+	begin
 		// Initialize Inputs
-		rst = 0;
+		$display($time, " << Starting the Simulation >>");
+		rst = 1;
 		clk = 0;
 		data_in = 0;
 		strobe_in = 0;
-		period_clk_ns = 0;
+		period_clk_ns = 20;	// Indicate the number of time at each cycle (20 ns in our case)
 
-		// Wait 100 ns for global reset to finish
-		#100;
+		// Wait for one clock cycle to reset
+		#20;
+		rst = 0;
         
 		// Add stimulus here
 

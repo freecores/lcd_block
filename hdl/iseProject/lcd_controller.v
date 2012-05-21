@@ -26,12 +26,23 @@ module lcd_controller(
 	localparam lcd_init_write_02 = 9;
 	localparam lcd_init_wait_50us = 10;
 	localparam lcd_init_strobe = 11;
-	reg [3:0] lcd_init_states, lcd_init_state_next;
+	reg [3:0] lcd_init_states, lcd_init_state_next; // Declare two variables of 4 bits to hold the FSM states
 	reg [19:0] counter_wait_lcd_init;
-	reg [3:0] counter_wait_strobe_lcd_init;
+	reg [7:0] counter_wait_strobe_lcd_init;
 	reg [19:0] time_wait_lcd_init;
-	reg [3:0] lcd_init_data_out;
-	reg lcd_init_e_out;
+	reg [3:0] lcd_init_data_out;  // FSM output LCD_DATA
+	reg lcd_init_e_out;           // FSM output LCD_E
+	reg lcd_init_done;
+	
+	// States for FSM that send data to LCD
+	localparam lcd_data_rst = 1;
+	localparam lcd_data_wait = 2;
+	localparam lcd_data_wr_nibble_high = 3;
+	localparam lcd_data_wr_nibble_low = 4;	
+	localparam lcd_data_strobe = 5;
+	reg [3:0] lcd_data_states, lcd_data_state_next;	// Declare two variables of 4 bits to hold the FSM states
+	reg [3:0] lcd_data_data_out;	// FSM output LCD_DATA
+	reg lcd_data_e_out;				// FSM output LCD_E
 	
 	
 	/*
@@ -44,6 +55,8 @@ module lcd_controller(
 				lcd_init_states <= lcd_init_rst;
 				counter_wait_lcd_init <= 0;
 				counter_wait_strobe_lcd_init <= 0;
+				lcd_init_e_out <= 0;
+				lcd_init_done <= 0;
 			end
 		else
 			begin
@@ -133,7 +146,8 @@ module lcd_controller(
 						begin
 							time_wait_lcd_init <= 100000;	// Wait for 100us
 							lcd_init_states <= lcd_init_wait;
-							lcd_init_state_next <= lcd_init_write_02;
+							lcd_init_state_next <= lcd_init_wait_50us;
+							lcd_init_done <= 1;
 						end
 				endcase;
 			end;
@@ -141,5 +155,16 @@ module lcd_controller(
 	
 	assign lcd_e = lcd_init_e_out;
 	assign lcd_nibble = lcd_init_data_out;
+	
+	/*
+		FSM that deals to send data to the LCD (nibble High + nibble Low)
+	*/
+	always @ (posedge clk)
+	begin
+		if (~lcd_init_done)
+			begin
+			
+			end
+	end;
 
 endmodule
