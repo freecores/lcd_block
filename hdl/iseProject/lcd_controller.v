@@ -174,16 +174,18 @@ module lcd_controller(
 							lcd_init_done <= 1;
 							lcd_init_state_next <= lcd_init_state_done;
 						end
-				endcase;
-			end;
-	end;
+				endcase
+			end
+	end
 	
+	// On the most cases you can only write to the display...
 	assign lcd_rw = 0;
+	assign lcd_rs = rs_in;
+	assign disable_flash = 1;
 	
 	// Will assign the output of the FSM init or the FSM data depending if initialization is already done
 	assign lcd_e = (!lcd_init_done) ? lcd_init_e_out : lcd_data_e_out;
-	assign lcd_nibble = (!lcd_init_done) ? lcd_init_data_out : lcd_data_data_out ;
-	assign lcd_rs = rs_in;
+	assign lcd_nibble = (!lcd_init_done) ? lcd_init_data_out : lcd_data_data_out ;	
 	
 	/*
 		FSM that deals to send data to the LCD (nibble High + nibble Low)
@@ -282,6 +284,6 @@ module lcd_controller(
 					
 				endcase
 			end
-	end;
+	end
 
 endmodule

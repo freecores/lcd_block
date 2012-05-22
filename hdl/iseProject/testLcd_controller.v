@@ -44,8 +44,10 @@ module testLcd_controller;
 	begin
 		// Initialize Inputs
 		$display($time, " << Starting the Simulation >>");
+		$monitor ("lcd_e=%b,lcd_nibble=%b,done=%b", lcd_e,lcd_nibble,done);
 		rst = 1;
 		clk = 0;
+		rs_in = 0;
 		data_in = 0;
 		strobe_in = 0;
 		period_clk_ns = 20;	// Indicate the number of time at each cycle (20 ns in our case)
@@ -60,6 +62,9 @@ module testLcd_controller;
 		data_in = 65;
 		#20 strobe_in = 1; #20 strobe_in = 0;
 		@(posedge done);
+		
+		// Finish simulation (on VHDL assert false report...)
+		$finish;
 	end
       
 endmodule
