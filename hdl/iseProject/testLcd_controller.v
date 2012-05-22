@@ -5,6 +5,7 @@ module testLcd_controller;
 	// Inputs
 	reg rst;
 	reg clk;
+	reg rs_in;
 	reg [7:0] data_in;
 	reg strobe_in;
 	reg [7:0] period_clk_ns;
@@ -21,6 +22,7 @@ module testLcd_controller;
 	lcd_controller uut (
 		.rst(rst), 
 		.clk(clk), 
+		.rs_in(rs_in),
 		.data_in(data_in), 
 		.strobe_in(strobe_in), 
 		.period_clk_ns(period_clk_ns), 
@@ -52,8 +54,12 @@ module testLcd_controller;
 		#20;
 		rst = 0;
         
-		// Add stimulus here
-
+		// One advantege over of Verilog over VHDL (Access to internal signals...)
+		// Like wait until... from Verilog		
+		@(posedge uut.lcd_init_done);
+		data_in = 65;
+		#20 strobe_in = 1; #20 strobe_in = 0;
+		@(posedge done);
 	end
       
 endmodule

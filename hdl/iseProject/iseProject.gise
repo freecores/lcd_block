@@ -26,6 +26,7 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="lcd_controller.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="lcd_controller.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="lcd_controller.ngc"/>
@@ -35,6 +36,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="lcd_controller.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="lcd_controller.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="lcd_controller_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="lcd_controller_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="lcd_controller_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lcd_controller_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testLcd_controller_beh.prj"/>
@@ -50,18 +52,22 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1337576939" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1337576939">
+    <transform xil_pn:end_ts="1337622824" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1337622824">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="lcd_controller.v"/>
       <outfile xil_pn:name="lcd_wishbone_slave.v"/>
       <outfile xil_pn:name="testLcd_controller.v"/>
     </transform>
-    <transform xil_pn:end_ts="1337522725" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2836371237087295533" xil_pn:start_ts="1337522725">
+    <transform xil_pn:end_ts="1337620875" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2836371237087295533" xil_pn:start_ts="1337620875">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1337522725" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2387588251019774503" xil_pn:start_ts="1337522725">
+    <transform xil_pn:end_ts="1337620875" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2387588251019774503" xil_pn:start_ts="1337620875">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -69,28 +75,41 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1337576939" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1337576939">
+    <transform xil_pn:end_ts="1337622824" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1337622824">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="lcd_controller.v"/>
       <outfile xil_pn:name="lcd_wishbone_slave.v"/>
       <outfile xil_pn:name="testLcd_controller.v"/>
     </transform>
-    <transform xil_pn:end_ts="1337576940" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1659802317889134806" xil_pn:start_ts="1337576939">
+    <transform xil_pn:end_ts="1337622825" xil_pn:in_ck="-5497409596377948253" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1659802317889134806" xil_pn:start_ts="1337622824">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testLcd_controller_beh.prj"/>
       <outfile xil_pn:name="testLcd_controller_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1337576941" xil_pn:in_ck="2483329315479921445" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2007445876491768972" xil_pn:start_ts="1337576940">
+    <transform xil_pn:end_ts="1337622826" xil_pn:in_ck="8162874102102850794" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2007445876491768972" xil_pn:start_ts="1337622825">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testLcd_controller_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1337471657" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1337471656">
@@ -121,12 +140,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1337475492" xil_pn:in_ck="-3373480295076389399" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="5624389301805847959" xil_pn:start_ts="1337475474">
+    <transform xil_pn:end_ts="1337646427" xil_pn:in_ck="-3373480295076389399" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="5624389301805847959" xil_pn:start_ts="1337646409">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="lcd_controller.lso"/>
       <outfile xil_pn:name="lcd_controller.ngc"/>
