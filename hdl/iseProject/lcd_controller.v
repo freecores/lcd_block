@@ -12,7 +12,7 @@ module lcd_controller(
     output lcd_rs,
     output lcd_rw,
     output disable_flash,
-    output done
+    output reg done
     );
 
 	// States for FSM that initialize the LCD
@@ -50,9 +50,7 @@ module lcd_controller(
 	reg [3:0] lcd_data_states, lcd_data_state_next;	// Declare two variables of 4 bits to hold the FSM states
 	reg [3:0] lcd_data_data_out;	// FSM output LCD_DATA
 	reg lcd_data_e_out;				// FSM output LCD_E
-	reg done;
-	
-	
+			
 	/*
 		Initialize LCD...
 	*/
@@ -185,6 +183,7 @@ module lcd_controller(
 	// Will assign the output of the FSM init or the FSM data depending if initialization is already done
 	assign lcd_e = (!lcd_init_done) ? lcd_init_e_out : lcd_data_e_out;
 	assign lcd_nibble = (!lcd_init_done) ? lcd_init_data_out : lcd_data_data_out ;
+	assign lcd_rs = rs_in;
 	
 	/*
 		FSM that deals to send data to the LCD (nibble High + nibble Low)
