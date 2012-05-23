@@ -1,5 +1,5 @@
 #ChipScope Pro Analyzer Project File, Version 3.0
-#Wed May 23 02:07:27 CEST 2012
+#Wed May 23 02:46:29 CEST 2012
 device.0.configFileDir=E\:\\lcd_block\\hdl\\iseProject
 device.0.configFilename=top_hw_testbench.bit
 device.0.inserterCDCFileDir=E\:\\lcd_block\\hdl\\iseProject
@@ -20,17 +20,18 @@ mdiCount=3
 mdiDevice0=0
 mdiDevice1=0
 mdiDevice2=0
-mdiType0=1
-mdiType1=0
-mdiType2=6
-mdiUnit0=0
+mdiType0=6
+mdiType1=1
+mdiType2=0
+mdiUnit0=1
 mdiUnit1=0
-mdiUnit2=1
+mdiUnit2=0
 navigatorHeight=0.17708333333333334
 navigatorHeightLast=0.17939814814814814
 navigatorWidth=0.1794871794871795
 navigatorWidthLast=0.1794871794871795
 signalDisplayPath=0
+unit.-1.-1.username=
 unit.0.0.0.HEIGHT0=0.36263737
 unit.0.0.0.TriggerRow0=1
 unit.0.0.0.TriggerRow1=1
@@ -277,7 +278,7 @@ unit.0.1.port.1.b.0.color=java.awt.Color[r\=0,g\=0,b\=124]
 unit.0.1.port.1.b.0.display=0
 unit.0.1.port.1.b.0.name=AsyncOut_1
 unit.0.1.port.1.b.0.orderindex=-1
-unit.0.1.port.1.b.0.radix=Ascii
+unit.0.1.port.1.b.0.radix=Hex
 unit.0.1.port.1.b.0.signedOffset=0.0
 unit.0.1.port.1.b.0.signedPrecision=0
 unit.0.1.port.1.b.0.signedScaleFactor=1.0
@@ -285,7 +286,7 @@ unit.0.1.port.1.b.0.tokencount=0
 unit.0.1.port.1.b.0.unsignedOffset=0.0
 unit.0.1.port.1.b.0.unsignedPrecision=0
 unit.0.1.port.1.b.0.unsignedScaleFactor=1.0
-unit.0.1.port.1.b.0.value=A
+unit.0.1.port.1.b.0.value=41
 unit.0.1.port.1.b.0.visible=1
 unit.0.1.port.1.b.1.alias=period_clk_ns
 unit.0.1.port.1.b.1.channellist=0 1 2 3 4 5 6 7
@@ -383,7 +384,7 @@ unit.0.1.port.1.s.17.display=3
 unit.0.1.port.1.s.17.name=AsyncOut[17]
 unit.0.1.port.1.s.17.orderindex=-1
 unit.0.1.port.1.s.17.persistence=0
-unit.0.1.port.1.s.17.value=0
+unit.0.1.port.1.s.17.value=1
 unit.0.1.port.1.s.17.visible=1
 unit.0.1.port.1.s.18.alias=rst
 unit.0.1.port.1.s.18.color=java.awt.Color[r\=0,g\=0,b\=124]
@@ -510,7 +511,7 @@ unit.0.1.vio.posn.18.type=signal
 unit.0.1.vio.posn.2.channel=2147483646
 unit.0.1.vio.posn.2.name=data_in
 unit.0.1.vio.posn.2.port=1
-unit.0.1.vio.posn.2.radix=5
+unit.0.1.vio.posn.2.radix=1
 unit.0.1.vio.posn.2.type=bus
 unit.0.1.vio.posn.3.channel=17
 unit.0.1.vio.posn.3.name=rs_in
