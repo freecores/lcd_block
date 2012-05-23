@@ -3,12 +3,12 @@
 Top module that will instantiate and connect our DUT (lcd_controller) the ICON, VIO , ILA cores
 */
 module top_hw_testbench(    
-    input clk/*,
+    input clk,
 	 output hw_lcd_e,
 	 output hw_lcd_rs,
 	 output hw_lcd_rw,
 	 output [3:0] hw_lcd_nibble,
-	 output hw_strata_flash_disable*/
+	 output hw_strata_flash_disable
     );
 	
 	// Declare some wires to connect the components
@@ -67,10 +67,10 @@ module top_hw_testbench(
 	assign data = {7'd1,lcd_e, lcd_nibble[3:0], lcd_rs, lcd_rw, disable_flash, done, strobe_in};
 	
 	// Send all interest output to outside
-	/*assign hw_lcd_e = lcd_e;
+	assign hw_lcd_e = lcd_e;
 	assign hw_lcd_rs = lcd_rs;
 	assign hw_lcd_rw = lcd_rw;
 	assign hw_lcd_nibble = lcd_nibble;
-	assign hw_strata_flash_disable = disable_flash;*/
+	assign hw_strata_flash_disable = disable_flash;
 
 endmodule
