@@ -74,8 +74,8 @@ module top_hw_testbench(
 	coreVIO VIO_inst
     (
       .CONTROL(control1), // INOUT BUS [35:0]
-		.CLK(clock3x),
-		.SYNC_OUT(async_out)
+		.CLK(clock1x),// clock1x clock3x
+		.SYNC_OUT(async_out)	// The clock must be inverted on the core to garantee a good sample point.
       //.ASYNC_OUT(async_out)
 	); // IN BUS [18:0]
 	
