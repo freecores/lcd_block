@@ -1,5 +1,5 @@
 #ChipScope Pro Analyzer Project File, Version 3.0
-#Thu May 24 19:05:36 CEST 2012
+#Thu May 24 20:14:48 CEST 2012
 deviceChain.deviceName0=XC3S500E
 deviceChain.deviceName1=XCF04S
 deviceChain.deviceName2=XC2C64A
@@ -16,17 +16,18 @@ mdiCount=3
 mdiDevice0=0
 mdiDevice1=0
 mdiDevice2=0
-mdiType0=1
-mdiType1=0
-mdiType2=6
-mdiUnit0=0
+mdiType0=6
+mdiType1=1
+mdiType2=0
+mdiUnit0=1
 mdiUnit1=0
-mdiUnit2=1
+mdiUnit2=0
 navigatorHeight=0.22569444444444445
 navigatorHeightLast=0.16550925925925927
-navigatorWidth=0.13992537313432835
-navigatorWidthLast=0.13992537313432835
+navigatorWidth=0.13946216385240776
+navigatorWidthLast=0.13946216385240776
 signalDisplayPath=0
+unit.-1.-1.username=
 unit.0.0.0.HEIGHT0=0.3762215
 unit.0.0.0.TriggerRow0=1
 unit.0.0.0.TriggerRow1=1
@@ -260,8 +261,8 @@ unit.0.0.waveform.posn.9.channel=16
 unit.0.0.waveform.posn.9.name=DataPort[16]
 unit.0.0.waveform.posn.9.type=signal
 unit.0.1.6.HEIGHT6=0.5162867
-unit.0.1.6.WIDTH6=0.27953044
-unit.0.1.6.X6=0.69625825
+unit.0.1.6.WIDTH6=0.27949852
+unit.0.1.6.X6=0.6961652
 unit.0.1.6.Y6=0.3762215
 unit.0.1.browser_tree_state<Sync\ Output\ Port>=1
 unit.0.1.coretype=VIO
@@ -383,7 +384,7 @@ unit.0.1.port.2.s.17.display=0
 unit.0.1.port.2.s.17.name=SyncOut[17]
 unit.0.1.port.2.s.17.orderindex=-1
 unit.0.1.port.2.s.17.persistence=0
-unit.0.1.port.2.s.17.value=0
+unit.0.1.port.2.s.17.value=1
 unit.0.1.port.2.s.17.visible=1
 unit.0.1.port.2.s.18.alias=rst
 unit.0.1.port.2.s.18.color=java.awt.Color[r\=0,g\=0,b\=124]
