@@ -1,6 +1,9 @@
 `timescale 1ns / 1ps
 /*
 Top module that will instantiate and connect our DUT (lcd_controller) the ICON, VIO , ILA cores
+For more information refer to this tutorial (Search in docs if link is broken)
+http://www.stanford.edu/~phartke/chipscope_tutorial.pdf
+http://www.stanford.edu/class/ee183/handouts.shtml
 */
 module top_hw_testbench(    
     input clk,
@@ -59,7 +62,9 @@ module top_hw_testbench(
 	coreVIO VIO_inst
     (
       .CONTROL(control1), // INOUT BUS [35:0]
-      .ASYNC_OUT(async_out)
+		.CLK(clk),
+		.SYNC_OUT(async_out)
+      //.ASYNC_OUT(async_out)
 	); // IN BUS [18:0]
 	
 	assign trig_0 = lcd_e;

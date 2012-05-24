@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 13.4
-# Date: Tue May 22 23:21:52 2012
+# Date: Thu May 24 16:40:57 2012
 #
 ##############################################################
 #
@@ -40,20 +40,20 @@ SELECT VIO_(ChipScope_Pro_-_Virtual_Input/Output) family Xilinx,_Inc. 1.05.a
 # END Select
 # BEGIN Parameters
 CSET asynchronous_input_port_width=8
-CSET asynchronous_output_port_width=19
+CSET asynchronous_output_port_width=8
 CSET component_name=coreVIO
 CSET constraint_type=external
 CSET enable_asynchronous_input_port=false
-CSET enable_asynchronous_output_port=true
+CSET enable_asynchronous_output_port=false
 CSET enable_synchronous_input_port=false
-CSET enable_synchronous_output_port=false
+CSET enable_synchronous_output_port=true
 CSET example_design=true
-CSET invert_clock_input=false
+CSET invert_clock_input=true
 CSET synchronous_input_port_width=8
-CSET synchronous_output_port_width=8
+CSET synchronous_output_port_width=19
 # END Parameters
 # BEGIN Extra information
 MISC pkg_timestamp=2012-01-07T09:20:13Z
 # END Extra information
 GENERATE
-# CRC: 8c8e6067
+# CRC: d7309c64
